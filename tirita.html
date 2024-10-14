@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirita Azul</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            background: #4169E1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .band-aid,
+        .band-aid-over {
+            border-radius: 40px;
+            width: 44vh;
+            height: 17vh;
+            border: 2px solid #232222;
+            background: linear-gradient(#EDCB9D 25%, #FCDAA7 25%);
+        }
+
+        .band-aid {
+            transform: rotate(45deg);
+            z-index: 2;
+        }
+
+        .band-aid-over {
+            transform: rotate(135deg);
+            z-index: 8;
+            position: absolute;
+        }
+
+        .medicine-pad {
+            border-radius: 20px;
+            width: 17vh;
+            height: 10vh;
+            background: #EBB697;
+            border: 0.5vh solid #232222;
+        }
+
+        .dot {
+            height: 1vh;
+            width: 1vh;
+            margin: 0.4vh 0.4vh;
+            background-color: #232222;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 67%;
+        }
+
+        .boton {
+            width: 27vh;
+            height: 8vh;
+            border: 1px solid rgba(25, 0, 167, 0.664);
+            background-color: #ff6f61;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            font-size: 2.5vh;
+        }
+
+        .boton:hover {
+            background-color: #ff9c93;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        #gift1:checked~.container .container {
+            display: flex;
+        }
+
+        .imagen {
+            display: none;
+        }
+
+        .imagen-foto {
+            width: 40vh;
+            height: 55vh;
+            object-fit: contain;
+        }
+
+        #boton1:checked~.imagen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #boton1:checked~.contenido {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="radio" name="gift" id="gift1" checked>
+    <input type="radio" name="gift" id="boton1">
+    <div class="contenido">
+
+        <div>
+            <h1>Tu tirita azul</h1>
+        </div>
+        <div class="center-me">
+            <div class="band-aid"></div>
+            <div class="band-aid-over center-me">
+                <div class="medicine-pad center-me">
+                    <div class="dot-line">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <br />
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <br />
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for="boton1" class="boton" id="boton1">Pulsa para verla</label>
+        </div>
+
+    </div>
+    <div class="imagen">
+        <img class="imagen-foto" style="border-radius: 10px;"
+            src="C:\Users\adria\Downloads\TIRITAS\imagenes\TIRITA_AZUL.png">
+        <h2>Espero que te haga feliz ❤️</h2>
+
+        <div class="pistas">
+            <p>Pistas: Comemos juntos</p>
+            <p>Pista2: Black</p>
+            <p>Frase secreta: Mejor que un buenos días.</p>
+        </div>
+    </div>
+
+    
+    </div>
+</body>
+
+</html>
